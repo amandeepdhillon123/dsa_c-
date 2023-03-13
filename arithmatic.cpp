@@ -14,9 +14,13 @@ int main()
     cout << x % y << endl;
 
     --x;
-    --y;
+   
     cout << x << endl;
-    cout << y;
+     --y;
+    cout << y << endl;
+
+   
+
 
 
 }
