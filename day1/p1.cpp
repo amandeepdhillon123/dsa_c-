@@ -1,31 +1,27 @@
 #include<iostream>
-using namespace std;
+
+using  namespace std;
+
+
 
 int main(){
-    int marks;
 
-    cin >> marks ;
+    int row;
+cout << " Enter the value of row: ";
+cin >> row;
+cout << endl;
 
-    if(marks >= 90)
+ int col;
+cout << " Enter the value of row: ";
+cin >> col;
+cout << endl;
+    for(int i=0; i<row; i++)
     {
-        cout << "bike milegi";
+        for(int j=0; j<col; j++)
+        {
+   cout << "* ";
+        }
+       cout << endl;
     }
-     else if(marks >= 80)
-    {
-        cout << "laptop milegi";
-    }
-    else if(marks >= 70)
-    {
-        cout << "phone milegi";
-    }
-    else if(marks >= 60)
-    {
-        cout << "cycle milegi";
-    }
-
-    else{
-        cout << "kuch nehi milega";
-    }
-
-
+  
 }
