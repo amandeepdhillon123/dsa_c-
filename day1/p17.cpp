@@ -21,12 +21,16 @@ int main()
 
     for(col=0; col<i+1; col++)
     {
-        cout << col+1;
+        int ans= col + 1;
+        char ch= ans +'A' -1;
+        cout << ch << " ";
     }
 //  for reverse coutning
     for(col=i; col>=1; col--)
     {
-        cout << col;
+         int ans= col ;
+        char ch= ans + 'A' - 1;
+        cout << ch << " " ;
     }
     cout << endl;
     }
