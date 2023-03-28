@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array accessing</title>
+</head>
+<body>
+      <input type="text" id="element" value="">
+      <button onclick="getElement()">Get Element</button>
+
+      <h5 id="p1">value will be display here</h5>
+</body>
+<script>
+    let data=[1,2,3,4,5,6,7,8,9];
+
+    function getElement(){
+        let el = document.getElementById('element').value;
+       let head =document.getElementById('p1');
+
+
+    //    console.log(head)
+       
+       
+        if( el < 0)
+        {
+            head.innerText =` please enter positive value ` 
+        }
+        else if( typeof parseInt(el) === "number")
+        {
+         head.innerText =` put a number , not string `
+        }
+        
+        else if( el < data.length)
+        {
+         head.innerText =` ${el} number element is ${data[el]}`
+        }
+        else 
+        {
+            alert("please enter a valid data")
+        }
+        
+    //    console.log(data[el])
+    //     alert(data[el])
+        // console.log("amandeep")
+        // alert("welcome here ")
+    }
+
+    
+  </script>
+</html>
