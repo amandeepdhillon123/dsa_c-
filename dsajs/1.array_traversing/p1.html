@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array travsersaing and accessing elements</title>
+</head>
+
+<body>
+    <h4>Array travsersaing and accessing elements</h4>
+    <p id="par">Dispaly data</p>
+    <input type="text" placeholder="put your values" id="el">
+    <button onClick="myFun()" id="btn">submit</button>
+    <p id="para">display your output</p>
+</body>
+
+</html>
+<script>
+
+    function myFun() {
+        // console.log("amandeep")
+        let input= document.getElementById("el").value;
+          input=  parseInt(input)
+      console.log(typeof(input))
+        let para = document.getElementById("para");
+        let par = document.getElementById("par");
+        
+
+        let data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+        
+
+        for (let i = 0; i < data.length; i++)
+        {
+         if(input < 0)
+         {
+            par.innerText=`data is [${data}]`;
+            para.innerText=`please do not enter neagative number`
+         }
+        
+
+         else if( input < data.length   )
+         {
+            par.innerText=`data is [${data}]`;
+            para.innerText=`${input} element is ${data[input]}`
+         }
+         else if(String(input))
+         {
+            par.innerText=`data is [${data}]`;
+            para.innerText=` please enter valid value ,not string`
+         }
+        
+         else{
+            para.innerText="please iner valid data"
+         }
+
+
+        }
+
+   
+
+  }
+</script>
