@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Transversing</title>
+</head>
+<body>
+    
+    <h1 >array transversing and accessing</h1>
+    <h2>data display here</h2>
+    <input type="text" placeholder=" write input">
+    <button onclick="myFun()">check output</button>
+
+    <h3>output display here</h3>
+</body>
+</html>
+<script>
+    let data = [1,2,3,4,5,6,7,8];
+    let pos=3;
+
+  
+
+    function myFun(){
+        let input=document.querySelector("input").value;
+        let dat=document.querySelector('h2')
+        let display=document.querySelector('h3')
+        // console.log(input);
+
+        for(let i=0;i<data.length;i++)
+    {
+        if(input<0)
+        {
+            dat.innerText=`Data is ${data}`
+            console.log("please provide positive number")
+        }
+        else if( input < data.length)
+        {
+            dat.innerText=`Data is ${data}`
+           display.innerText=`  ${input} index value is ${data[input]}`
+        }
+        else if( String(input))
+        {
+            dat.innerText=`Data is ${data}`
+           display.innerText=`please put the number , not string`
+        }
+        else
+        {
+            console.log("please put the valid value")
+        }
+    }
+
+    }
+</script>
