@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Deletion of an element in an array </h1>
+    <h2>Data</h2>
+    <input type="text" id="pos" placeholder="write your pos">
+    <button>submit</button>
+    <h3>Output display here</h3>
+
+    
+
+</body>
+</html>
+<script>
+    document.querySelector('button'),addEventListener('click',myFun)
+
+    let data=[1,2,3,4,5,6,7,8];
+       
+      
+
+        let pos=document.querySelector("#pos").value;
+        //   pos=parseInt(pos)
+        // console.log(pos)
+      
+        for(i=pos; i<data.length;i++)
+        {    
+            
+             if( String(pos))
+            {
+                let h3=document.querySelector('h3').innerText=`please provide numeric values`
+            }
+            else if(pos < 0)
+            {
+                let h3=document.querySelector('h3').innerText=`please provide postive value`
+            }
+            else if(pos < data.length)
+            {
+             data[i]=data[i+1]
+
+            //    console.log(data)
+            }
+            else
+            {
+                let h3=document.querySelector('h3').innerText=`please provide valiud input `
+            }
+            
+        }
+          
+        let h3=document.querySelector('h3').innerText=`Output is ${data}`
+        console.log(h3)
+    }
+</script>
