@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Searchin element</h1>
+    <h2>Data</h2>
+    <br /><br />
+    <input type="text" id="element" placeholder="write element" />
+    <button>Check</button> <br /><br />
+    <p class="search">ouput</p>
+    <br /><br />
+    <p class="length">How many times</p>
+    <br /><br />
+    <p class="print">Print all numbers</p>
+    <br /><br />
+  </body>
+</html>
+<script>
+  let data = [1, 2, 3, 4, 5, 7, 8, 5, 6, 7, 5, 6, 1, 2, 3, 9, 2, 6, 4, 7, 2];
+
+  let h2 = (document.querySelector("h2").innerText = `${data}`);
+
+  //    console.log(typeof(element))
+  let array = [];
+
+  document.querySelector("button").addEventListener("click", () => {
+    let element = document.querySelector("#element").value;
+
+    element = parseInt(element);
+    // console.log("amandep")
+    for (let i = 0; i < data.length; i++) {
+      // console.log(data[i])
+      console.log(element);
+      if (data[i] === element) {
+        array.push(data[i]);
+
+        let output = (document.querySelector(".search").innerText = data[i]);
+      }
+    }
+
+    let length = (document.querySelector(
+      ".length"
+    ).innerText = `${array.length} times repeated`);
+
+    for (let i = 0; i < array.length; i++) {
+      let length = (document.querySelector(".print").innerText = `${array[i]}`);
+    }
+  });
+</script>
