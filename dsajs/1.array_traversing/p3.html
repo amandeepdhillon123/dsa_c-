@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>accessing element and traversing element</h1> <br>
+    <h2>Data</h2>
+
+    <!-- check for position  -->
+    <input type="text" id="ele" placeholder="write element" />
+
+    <button>Check Position</button>
+    <br><br><br>
+    <!-- check for element  -->
+    <input type="text" id="pos" placeholder="write position" />
+
+    <button id="btn">CheckElement</button> <br>
+    <h3>Output will be display here</h3>
+  </body>
+</html>
+<script>
+  let data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const h2 = (document.querySelector("h2").innerText = `${data}`);
+
+  //    check  position
+
+  document.querySelector("button").addEventListener("click", function () {
+    let element = document.querySelector("#ele").value;
+    element = parseInt(element);
+    for (let i = 0; i < data.length; i++) {
+      if (data[i] === element) {
+        console.log("amandeep");
+        let h3 = (document.querySelector(
+          "h3"
+        ).innerText = ` postion of element ${data[i]} is ${i}`);
+        console.log(h3);
+      }
+    }
+});
+
+//    check element 
+
+   document.querySelector('#btn').addEventListener('click',() => {
+      let pos=document.querySelector('#pos').value;
+         pos=parseInt(pos);
+        for (let i=0; i< data.length; i++) {
+            if(i === pos){
+                let h3= document.querySelector('h3').innerText=`element at position ${pos} is ${data[i]}`
+            }
+
+        }
+   })
+</script>
