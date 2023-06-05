@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+
+//   let data= [1,2,3,4,5,7,8,9]
+
+
+
+
+//   insert element 
+
+// let pos=2;
+// let newEl=67;
+
+// for(let i=data.length-1; i>=pos; i--)
+
+// {
+//     data[i+1]=data[i]
+
+//      if(i==pos)
+//      {
+//         data[i] = newEl
+//      }
+// }
+
+// console.log(data)
+
+
+// deletion element 
+
+
+
+//   let pos =2;
+
+//   for(let i= pos; i<data.length-1; i++)
+//   {
+//       data[i]=data[i+1];
+
+//   }
+// data.length=data.length-1
+
+//   console.log(data)
+
+
+// merger two array 
+
+//    let arr1= [22,333,44,5,6];
+
+//    let arr2= [555,66,3,3];
+
+//    let arr3=[]
+
+//    for(let i=0; i<arr1.length; i++)
+//    {
+//        arr3[i] = arr1[i]
+//    }
+
+// //    console.log(arr3)
+
+// for(let i=0; i<arr2.length; i++)
+//    {
+//        arr3[arr1.length + i] = arr2[i]
+//    }
+
+//    console.log(arr3)
+// //    arr3.sort()
+
+// //    arr3.reverse()
+//    console.log(arr3)
+
+//   merger two array by while loop 
+
+
+let data2= [4,9,25,45];
+
+let data1 = [3,7,12,34,56,90];
+let data3=[];
+
+let d1=0;
+let d2=0;
+let d3=0;
+
+while(d1<data1.length && d2 <data2.length)
+{
+    if(data1[d1] < data2[d2])
+    {
+        data3[d3] = data1[d1]
+        d1++;
+    }
+    else{
+        data3[d3]=data2[d2]
+        d2++;
+    }
+    d3++
+}
+
+while(d1<data1.length)
+{
+    data3[d3] = data1[d1]
+        d1++;
+        d3++;
+}
+
+console.log(data3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
